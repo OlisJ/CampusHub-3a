@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regjistrimi i studentëve</title>
+    <style>
+        #a{
+            background-color: lightblue;
+            color: black;
+        }
+        .b{
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <p>Regjistrimi i studenteve ne klas</p>
+    <fieldset>
+        <form method="get">
+            <legend>Te Dhenat Personale</legend>
+            <table>
+                <tr>
+                    <td><label for="txtid">Sheno ID</label></td>
+                    <td><input type="number" id="txtid" name="id" min="0" max="100" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="emri">Emri</label></td>
+                    <td><input type="text" id="emri" name="emri" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="mbiemri">Mbiemri</label></td>
+                    <td><input type="text" id="mbiemri" name="mbiemri" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="datelindja">Data e lindjes</label></td>
+                    <td><input type="date" id="datelindja" name="datelindja" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="telefoni">Numri i telefonit</label></td>
+                    <td><input type="tel" id="telefoni" name="telefoni" /></td>
+                </tr>
+                <tr>
+                    <td><label for="adresa">Adresa</label></td>
+                    <td><input type="text" id="adresa" name="adresa" /></td>
+                </tr>
+            </table>
+        </form> </fieldset>
+        <fieldset style="margin-top: 10px;">
+        <form action="" >
+            <legend>Te Dhenat Akademike</legend>
+            <table>
+                <tr>
+                    <td><label for="drejtimi">Drejtimi</label></td>
+                    <td>
+                        <select id="drejtimi" name="drejtimi" required>
+                            <option value="">Zgjidh drejtimin</option>
+                            <option value="informatike">Informatikë</option>
+                            <option value="ekonomi">Ekonomi</option>
+                            <option value="juridik">Juridik</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="viti">Viti i studimeve</label></td>
+                    <td>
+                        <select id="viti" name="viti" required>
+                            <option value="">Zgjidh vitin</option>
+                            <option value="1">Viti i parë</option>
+                            <option value="2">Viti i dytë</option>
+                            <option value="3">Viti i tretë</option>
+                            <option value="4">Viti i katërt</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Statusi</td>
+                    <td><input type="radio">Student i ri
+                        <input type="radio">Transfer
+                        <input type="radio">Vazhdim i studimeve
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Forma e studimit</td>
+                    <td><input type="checkbox">Ordinar
+                        <input type="checkbox">Part-time
+                        <input type="checkbox">Online
+                    
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+    <fieldset style="margin-top: 10px;">
+        <form action="">
+            <legend>Dokument</legend>
+            <tr>
+                <td>Fotografia</td>
+                <td><input type="file" name="" id=""></td>
+            </tr><br>
+            <tr>
+                <td>Certifikata e matures</td>
+                <td><input type="file" name="" id=""></td>
+            </tr>
+        </form>
+    </fieldset>
+
+     <fieldset style="margin-top: 10px;">
+        <form action="">
+            <legend>Interesat</legend>
+            <tr>
+                <td>Zgjidhni fushat qe ju  interesojn</td>
+                
+            </tr>
+            <br>
+            <tr>
+                <td><input type="checkbox" name="" id="">Programim</td>
+                <td><input type="checkbox" name="" id="">RRjetizim</td>
+                <td><input type="checkbox" name="" id="">AI</td>
+            </tr><br>
+            <tr>
+                <td><input type="checkbox" name="" id="">Siguri kibernetike</td>
+                <td><input type="checkbox" name="" id="">Baza te dhenave</td>
+                <td><input type="checkbox" name="" id="">Dizajn</td>
+            </tr>
+            <br><br>
+            <tr>
+                <td colspan="2">
+                    <button type="submit">Regjistrohu</button>
+                    <button type="reset">Fshij formularin</button>
+
+                </td>
+            </tr>
+        </form>
+    </fieldset>
+</body>
+</html>

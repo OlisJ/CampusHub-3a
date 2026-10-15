@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regjistrimi ne event</title>
+</head>
+<body>
+    <h1>Regjistrimi ne event</h1>
+
+    <form >
+        <div>
+            <label for="emri">Emri i plote</label>
+            <input type="text" id="emri" name="emri" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="ngjarja">Zgjidhni ngjarjen</label>
+            <select id="ngjarja" name="ngjarja" required>
+                <option value="">-- Zgjidhni nje event --</option>
+                <option value="1">Konference e teknologjise</option>
+                <option value="2">Punetori programimi</option>
+                <option value="3">Takim studentor</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Statusi juaj</legend>
+            <div>
+                <input type="radio" id="student" name="statusi" required>
+                <label for="student">Student aktual</label>
+            </div>
+            <div>
+                <input type="radio" id="diplomuar" name="statusi">
+                <label for="diplomuar">I diplomuar</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="mesazhi">Mesazh ose pyetje</label>
+            <textarea id="mesazhi" name="mesazhi" rows="5"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="njoftimet" name="njoftimet">
+            <label for="njoftimet">Pranoj te marr njoftime per eventet e ardhshme</label>
+        </div>
+        <button type="submit">Regjistrohu</button>
+    </form>
+</body>
+</html>
